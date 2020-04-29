@@ -3,10 +3,39 @@
 <head>
 	<title>Làm hiệu ứng Slider với JavaScript Native</title>
 	<style type="text/css">
-		
+		.chuyenslide{
+			text-align: center;
+		}
+		.chuyenslide ul{
+			display: inline;
+		}
+		.chuyenslide ul li{
+			display: inline-block;
+			border: 1px solid grey;
+			text-indent: -9999px;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			margin: 20px 12px;
+			transition: 0.4s;
+			cursor: pointer;
+		}
+		.chuyenslide ul li:hover,
+		.chuyenslide ul li.kichhoat{
+			background-color: grey;
+		}
 	</style>
 </head>
 <body>
+	<div class="chuyenslide">
+		<ul>
+			<li class="kichhoat">1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
 
+	</script>
 </body>
 </html>
