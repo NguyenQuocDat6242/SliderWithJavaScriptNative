@@ -11,8 +11,15 @@
 			height:  100%;
 			overflow: hidden;
 		}
+		.slidewrapper{
+			height: 100%;
+			position: relative;
+			width: 100%;
+		}
 		.cacslide{
 			height: 100%;
+			position: absolute;
+			width: 100%;
 		}
 		.cacslide ul{
 			height: 100%;
@@ -23,6 +30,11 @@
 			position: absolute;
 			height: 100%;
 			width: 100%;
+			transition: 0.4s;
+			opacity: 0;
+		}
+		.cacslide ul li.active{
+			opacity: 1;
 		}
 		.motslide{
 			width: 100%;
@@ -59,26 +71,50 @@
 			left: 4%;
 			z-index: 3;
 			opacity: 1;
-			top: 50%;
+			top: 43%;
 			color: #fff;
 		}
 		.motslide h2{
-
+			font-size: 82px;
+			font-weight: normal;
+			font-family: sans-serif;
 		}
 		.textnoidung .title-name{
-
+			font-size: 33px;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding: 10px 0px 21px 0;
+			display: block;
 		}
 		.textnoidung .ke{
-
+			width: 80%;
+			height: 2px;
+			background-color: #fff;
+			margin: 1px 0 12px 0;
 		}
-		.textnoidung .paragraph{
-
+		.textnoidung .paragraph {
+			font-size: 19px;
+			line-height: 20px;
+			color: #dfdfdf;
 		}
 		.textnoidung .nut{
-
+			color: #fff;
+			text-decoration: none;
+			border: 1px solid #fff;
+			padding: 10px 20px;
+			margin: 20px 0 0 0;
+			display: inline-block;
+			font-size: 17px;
+			font-weight: bolder;
+			font-family: sans-serif;
 		}
 		.chuyenslide{
 			text-align: center;
+			position: absolute;
+			bottom: 6%;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 9;
 		}
 		.chuyenslide ul{
 			display: inline;
@@ -101,62 +137,64 @@
 	</style>
 </head>
 <body>
-	<div class="cacslide">
-		<ul>
-			<li>
-				<div class="motslide">
-					<div class="anh" style="background-image: url(Slide1.jpg)"></div>
-					<img src="Tamgiacduoi1.png" alt="" class="nauduoi1">
-					<img src="Tamgiacduoi1.png" alt="" class="nauduoi2">
-					<img src="Tamgiactren1.png" alt="" class="nautren">
-					<div class="textnoidung">
-						<h2>01</h2>
-						<p class="title-name">THTrue Milk</p>
-						<div class="ke"></div>
-						<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores error, quibusdam laudantium illum enim ratione distinctio, dolore fuga assumenda eos ullam quod eveniet, deleniti, possimus vero. Labore impedit quam, quaerat!</p>
-						<a href="" class="nut">SEE PROJECT</a>
+	<div class="slidewrapper">
+		<div class="cacslide">
+			<ul>
+				<li>
+					<div class="motslide">
+						<div class="anh" style="background-image: url(Slide1.jpg)"></div>
+						<img src="Tamgiacduoi1.png" alt="" class="nauduoi1">
+						<img src="Tamgiacduoi1.png" alt="" class="nauduoi2">
+						<img src="Tamgiactren1.png" alt="" class="nautren">
+						<div class="textnoidung">
+							<h2>01</h2>
+							<p class="title-name">THTrue Milk</p>
+							<div class="ke"></div>
+							<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores error, quibusdam laudantium illum enim ratione distinctio, dolore fuga assumenda eos ullam quod eveniet, deleniti, possimus vero. Labore impedit quam, quaerat!</p>
+							<a href="" class="nut">SEE PROJECT</a>
+						</div>
 					</div>
-				</div>
-			</li>
-			<li>
-				<div class="motslide">
-					<div class="anh" style="background-image: url(Slide1.jpg)"></div>
-					<img src="Tamgiacduoi1.png" alt="" class="nauduoi1">
-					<img src="Tamgiacduoi1.png" alt="" class="nauduoi2">
-					<img src="Tamgiactren1.png" alt="" class="nautren">
-					<div class="textnoidung">
-						<h2>02</h2>
-						<p class="title-name">VinaMilk</p>
-						<div class="ke"></div>
-						<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores error, quibusdam laudantium illum enim ratione distinctio, dolore fuga assumenda eos ullam quod eveniet, deleniti, possimus vero. Labore impedit quam, quaerat!</p>
-						<a href="" class="nut">SEE PROJECT</a>
+				</li>
+				<li class="active">
+					<div class="motslide">
+						<div class="anh" style="background-image: url(Slide1.jpg)"></div>
+						<img src="Tamgiacduoi1.png" alt="" class="nauduoi1">
+						<img src="Tamgiacduoi1.png" alt="" class="nauduoi2">
+						<img src="Tamgiactren1.png" alt="" class="nautren">
+						<div class="textnoidung">
+							<h2>02</h2>
+							<p class="title-name">VinaMilk</p>
+							<div class="ke"></div>
+							<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores error, quibusdam laudantium illum enim ratione distinctio, dolore fuga assumenda eos ullam quod eveniet, deleniti, possimus vero. Labore impedit quam, quaerat!</p>
+							<a href="" class="nut">SEE PROJECT</a>
+						</div>
 					</div>
-				</div>
-			</li>
-			<li>
-				<div class="motslide">
-					<div class="anh" style="background-image: url(Slide1.jpg)"></div>
-					<img src="Tamgiacduoi1.png" alt="" class="nauduoi1">
-					<img src="Tamgiacduoi1.png" alt="" class="nauduoi2">
-					<img src="Tamgiactren1.png" alt="" class="nautren">
-					<div class="textnoidung">
-						<h2>03</h2>
-						<p class="title-name">Vinschool</p>
-						<div class="ke"></div>
-						<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores error, quibusdam laudantium illum enim ratione distinctio, dolore fuga assumenda eos ullam quod eveniet, deleniti, possimus vero. Labore impedit quam, quaerat!</p>
-						<a href="" class="nut">SEE PROJECT</a>
+				</li>
+				<li>
+					<div class="motslide">
+						<div class="anh" style="background-image: url(Slide1.jpg)"></div>
+						<img src="Tamgiacduoi1.png" alt="" class="nauduoi1">
+						<img src="Tamgiacduoi1.png" alt="" class="nauduoi2">
+						<img src="Tamgiactren1.png" alt="" class="nautren">
+						<div class="textnoidung">
+							<h2>03</h2>
+							<p class="title-name">Vinschool</p>
+							<div class="ke"></div>
+							<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores error, quibusdam laudantium illum enim ratione distinctio, dolore fuga assumenda eos ullam quod eveniet, deleniti, possimus vero. Labore impedit quam, quaerat!</p>
+							<a href="" class="nut">SEE PROJECT</a>
+						</div>
 					</div>
-				</div>
-			</li>
-		</ul>
-	</div>
-	<!-- 	het noidung slide -->
-	<div class="chuyenslide">
-		<ul>
-			<li class="kichhoat">1</li>
-			<li>2</li>
-			<li>3</li>
-		</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- 	het noidung slide -->
+		<div class="chuyenslide">
+			<ul>
+				<li class="kichhoat">1</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+		</div>
 	</div>
 	<script type="text/javascript">
 		document.addEventListener("DOMContentLoaded" , function(){
