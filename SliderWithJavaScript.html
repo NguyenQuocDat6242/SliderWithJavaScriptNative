@@ -35,7 +35,18 @@
 		</ul>
 	</div>
 	<script type="text/javascript">
-
+		document.addEventListener("DOMContentLoaded" , function(){
+			var nut = document.querySelectorAll('.chuyenslide ul li')
+			for (var i = 0; i < nut.length; i++) {
+				nut[i].addEventListener('click',function(){
+					for (var i = 0; i < nut.length; i++) {
+						nut[i].classList.remove('kichhoat');
+					}
+					this.classList.add('kichhoat');
+				})
+			}
+		} , false)
+		
 	</script>
 </body>
 </html>
