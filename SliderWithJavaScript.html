@@ -3,6 +3,35 @@
 <head>
 	<title>Làm hiệu ứng Slider với JavaScript Native</title>
 	<style type="text/css">
+		*{margin: 0;
+			padding: 0;
+		}
+		html,body{
+			width:  100%;
+			height:  100%;
+			overflow: hidden;
+		}
+		.cacslide{
+			height: 100%;
+		}
+		.cacslide ul{
+			height: 100%;
+		}
+		.cacslide ul li{
+			list-style: none;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+		}
+		.motslide{
+			width: 100%;
+			height: 100%;
+		}
+		.motslide .anh{
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+		}
 		.chuyenslide{
 			text-align: center;
 		}
@@ -28,40 +57,49 @@
 </head>
 <body>
 	<div class="cacslide">
-		<div class="motslide">
-			<div class="anh" style="background-image: url(Slide1.jpg)"></div>
-			<img src="Tamgiacduoi1.png" alt="" class="nauduoi1">
-			<img src="Tamgiacduoi1.png" alt="" class="nauduoi2">
-			<img src="Tamgiactren1.png" alt="" class="nautren">
-			<h2>01</h2>
-			<p class="title-name">THTrue Milk</p>
-			<div class="ke"></div>
-			<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores error, quibusdam laudantium illum enim ratione distinctio, dolore fuga assumenda eos ullam quod eveniet, deleniti, possimus vero. Labore impedit quam, quaerat!</p>
-			<a href="">SEE PROJECT</a>
-		</div>
-		<div class="motslide">
-			<div class="anh" style="background-image: url(Slide1.jpg)"></div>
-			<img src="Tamgiacduoi1.png" alt="" class="nauduoi1">
-			<img src="Tamgiacduoi1.png" alt="" class="nauduoi2">
-			<img src="Tamgiactren1.png" alt="" class="nautren">
-			<h2>02</h2>
-			<p class="title-name">VinaMilk</p>
-			<div class="ke"></div>
-			<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores error, quibusdam laudantium illum enim ratione distinctio, dolore fuga assumenda eos ullam quod eveniet, deleniti, possimus vero. Labore impedit quam, quaerat!</p>
-			<a href="">SEE PROJECT</a>
-		</div>
-		<div class="motslide">
-			<div class="anh" style="background-image: url(Slide1.jpg)"></div>
-			<img src="Tamgiacduoi1.png" alt="" class="nauduoi1">
-			<img src="Tamgiacduoi1.png" alt="" class="nauduoi2">
-			<img src="Tamgiactren1.png" alt="" class="nautren">
-			<h2>03</h2>
-			<p class="title-name">Vinschool</p>
-			<div class="ke"></div>
-			<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores error, quibusdam laudantium illum enim ratione distinctio, dolore fuga assumenda eos ullam quod eveniet, deleniti, possimus vero. Labore impedit quam, quaerat!</p>
-			<a href="">SEE PROJECT</a>
-		</div>
+		<ul>
+			<li>
+				<div class="motslide">
+					<div class="anh" style="background-image: url(Slide1.jpg)"></div>
+					<img src="Tamgiacduoi1.png" alt="" class="nauduoi1">
+					<img src="Tamgiacduoi1.png" alt="" class="nauduoi2">
+					<img src="Tamgiactren1.png" alt="" class="nautren">
+					<h2>01</h2>
+					<p class="title-name">THTrue Milk</p>
+					<div class="ke"></div>
+					<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores error, quibusdam laudantium illum enim ratione distinctio, dolore fuga assumenda eos ullam quod eveniet, deleniti, possimus vero. Labore impedit quam, quaerat!</p>
+					<a href="">SEE PROJECT</a>
+				</div>
+			</li>
+			<li>
+				<div class="motslide">
+					<div class="anh" style="background-image: url(Slide1.jpg)"></div>
+					<img src="Tamgiacduoi1.png" alt="" class="nauduoi1">
+					<img src="Tamgiacduoi1.png" alt="" class="nauduoi2">
+					<img src="Tamgiactren1.png" alt="" class="nautren">
+					<h2>02</h2>
+					<p class="title-name">VinaMilk</p>
+					<div class="ke"></div>
+					<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores error, quibusdam laudantium illum enim ratione distinctio, dolore fuga assumenda eos ullam quod eveniet, deleniti, possimus vero. Labore impedit quam, quaerat!</p>
+					<a href="">SEE PROJECT</a>
+				</div>
+			</li>
+			<li>
+				<div class="motslide">
+					<div class="anh" style="background-image: url(Slide1.jpg)"></div>
+					<img src="Tamgiacduoi1.png" alt="" class="nauduoi1">
+					<img src="Tamgiacduoi1.png" alt="" class="nauduoi2">
+					<img src="Tamgiactren1.png" alt="" class="nautren">
+					<h2>03</h2>
+					<p class="title-name">Vinschool</p>
+					<div class="ke"></div>
+					<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores error, quibusdam laudantium illum enim ratione distinctio, dolore fuga assumenda eos ullam quod eveniet, deleniti, possimus vero. Labore impedit quam, quaerat!</p>
+					<a href="">SEE PROJECT</a>
+				</div>
+			</li>
+		</ul>
 	</div>
+	<!-- 	het noidung slide -->
 	<div class="chuyenslide">
 		<ul>
 			<li class="kichhoat">1</li>
@@ -81,7 +119,7 @@
 				})
 			}
 		} , false)
-		
+
 	</script>
 </body>
 </html>
