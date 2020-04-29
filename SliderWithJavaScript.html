@@ -55,16 +55,45 @@
 			opacity: 0;
 		}
 		.motslide .nauduoi1{
-			opacity: 0.4;
-			top: -80%;
+			opacity: 0;
+			top: -60%;
+		}
+		ul li.active .motslide .nauduoi1,
+		ul li.active .motslide .nauduoi2{
+			animation: nauvao 1s forwards;
+		}
+		ul li.active .motslide .nauduoi2{animation-delay: 0.3s}
+		@-webkit-keyframes nauvao{
+			from{
+				transform: translateX(-100%) translateY(100%);
+				opacity: 0;
+			}
+			to{
+				transform: translateX(0) translateY(0);
+				opacity: 0.4;
+			}
 		}
 		.motslide .nauduoi2{
-			opacity: 0.4;
+			opacity: 0;
 			top: -40%;
 		}
 		.motslide .nautren{
-			opacity: 0.5;
+			opacity: 0;
 			right: 0;
+		}
+		ul li.active .motslide .nautren{ 
+			animation: trenvao 1s forwards;
+			animation-delay: 0.3s 
+		}
+		@-webkit-keyframes trenvao {
+			from{
+				transform: translateX(100%) translateY(-100%);
+				opacity: 0;
+			}
+			to{
+				transform: translateX(0) translateY(0);
+				opacity: 0.4;
+			}
 		}
 		.motslide .textnoidung {
 			width: 20%;
